@@ -1,0 +1,136 @@
+/* Variables */
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+section {
+    background: var(--dark-cyan);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.card {
+    width: 350px;
+    border-radius: 20px;
+    background: white;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+.header {
+    background-image: url(../images/bg-pattern-card.svg);
+    background-size: cover;
+    height: 150px;
+}
+.body {
+    padding: 0 20px 25px;
+}
+.img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 5px solid white;
+    overflow: hidden;
+    margin: -55px auto 30px auto;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+h2 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: var(--very-dark-desaturated-blue);
+}
+span {
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+    margin-left: 6px;
+}
+h3 {
+    color: var(--dark-gray);
+    font-weight: 400;
+    font-size: 1rem;
+}
+.footer {
+    border-top: 1px solid var(--dark-gray);
+    display: flex;
+    padding: 0 25px;
+}
+.footer .item {
+    flex: 1;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item h4 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    color: var(--very-dark-desaturated-blue);
+}
+.item h5 {
+    color: var(--dark-gray);
+    font-weight: lighter;
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+}
+.background img {
+    display: block;
+    position: absolute;
+}
+.background .b1 {
+    top: -415px;
+    left: -275px;
+    transform: translate(-100px, -50px);
+}
+.background .b2 {
+    bottom: -580px;
+    right: -480px;
+    transform: translate(-100px, -50px);
+}
+@media (max-width: 768px) {
+    .background .b1 {
+        top: -510px;
+        left: -545px;
+        transform: translate(-100px, -50px);
+    }
+    .background .b2 {
+        bottom: -650px;
+        right: -690px;
+        transform: translate(-100px, -50px);
+    }
+}
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
